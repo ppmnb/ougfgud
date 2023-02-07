@@ -293,6 +293,11 @@ async def _(event):
                     except telethon.errors.rpcerrorlist.UsernameInvalidError:
                         await event.client.send_message(event.chat_id, f"مبند `{username}` ❌❌")
                         break
+                        except USERNAME_PURCHASE_AVAILABLE:
+
+    with.open("banned.txt", "r") as f:
+
+        f.write(\n{username})
                     except Exception as eee:
 
                         await sedthon.send_message(event.chat_id, f'''خطأ مع {username}
